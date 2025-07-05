@@ -1,12 +1,9 @@
 import './App.css';
-import Layout from './Layout/Layout';
-import Home from './pages/Home';
+import AppRoutes from './Router/AppRoutes';
 
 function App() {
   return (
-    <Layout>
-      <Home />
-    </Layout>
+    <AppRoutes />
   );
 }
 
