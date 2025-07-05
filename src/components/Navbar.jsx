@@ -58,7 +58,7 @@ export default function Navbar() {
                         onMouseLeave={() => setHovered(null)}
                     > 
                         {hovered === idx && (
-                            <motion.span layoutId="hovered-span" className="absolute inset-0 h-full w-full bg-neutral-100" />
+                            <motion.span layoutId="hovered-span" className="absolute inset-0 h-full w-full bg-neutral-100 rounded-full" />
                         )}
                         <span className="relative z-10">{item.title}</span>
                     </Link>
