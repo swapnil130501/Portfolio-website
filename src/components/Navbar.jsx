@@ -16,7 +16,7 @@ export default function Navbar() {
         },
         {
             title: 'Contact',
-            href: '/contacts'
+            href: '/contact'
         },
         {
             title: 'Blog',
