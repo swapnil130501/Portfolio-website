@@ -7,12 +7,6 @@ import {
 export function DraggableCardDemo() {
   const items = [
     {
-      title: "PRX Powermatic 80",
-      image:
-        "src/assets/tissot-prx80.webp",
-      className: "absolute top-10 left-[20%] rotate-[-5deg]",
-    },
-    {
       title: "Speedmaster",
       image:
         "src/assets/omega-speedmaster.webp",
@@ -48,10 +42,16 @@ export function DraggableCardDemo() {
         "src/assets/orient-bambino.webp",
       className: "absolute top-8 left-[30%] rotate-[4deg]",
     },
+    {
+      title: "PRX Powermatic 80",
+      image:
+        "src/assets/tissot-prx80.webp",
+      className: "absolute top-10 left-[20%] rotate-[-5deg]",
+    },
   ];
   return (
     <DraggableCardContainer
-      className="relative flex min-h-[65vh] w-full items-center justify-center overflow-clip">
+      className="relative flex min-h-[40rem] w-full items-center justify-center overflow-clip">
       <p
         className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
         Watches
@@ -61,9 +61,9 @@ export function DraggableCardDemo() {
           <img
             src={item.image}
             alt={item.title}
-            className="pointer-events-none relative z-10 h-80 w-80 object-cover" />
+            className="pointer-events-none relative z-10 h-50 w-80 object-cover" />
           <h3
-            className="mt-4 text-center text-2xl font-bold text-neutral-800">
+            className="mt-4 text-center text-base font-bold text-neutral-800">
             {item.title}
           </h3>
         </DraggableCardBody>
