@@ -16,7 +16,7 @@ export default function Projects({data, layout = "md:grid-cols-3"}) {
                         key={data.title}
                         className="group relative"
 >
-                        <Link href={data.href}>
+                        <Link to={data.href}>
                             <img className="h-72 group-hover:scale-[1.02] transition duration-200 w-full object-cover rounded-xl" src={data.src} alt={data.title} height={300} width={300}/>
                             <h2 className='font-medium tracking-tight text-neutral-500 pt-4'>
                                 {data.title}
