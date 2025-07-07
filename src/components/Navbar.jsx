@@ -37,7 +37,7 @@ export default function Navbar() {
     })
 
     return (
-        <Container className="bg-white p-4 md:p-10">
+        <Container className="bg-white p-8 md:p-8">
             <motion.nav
                 animate={{
                     width: scrolled ? "65%" : "100%",
@@ -50,7 +50,7 @@ export default function Navbar() {
                 className="fixed top-0 left-0 right-0 z-50 mx-auto max-w-4xl flex items-center justify-between bg-white rounded-full py-2 px-4"
                 >
                 <Link
-                    to={"/"}
+                    to={"/#"}
                 >
                     <img 
                         className="h-10 w-10 rounded-full cursor-pointer" 
