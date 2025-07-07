@@ -1,5 +1,4 @@
 "use client";
-import { cn } from "../../lib/utils"
 import React, { useRef, useState, useEffect } from "react";
 import {
   motion,
@@ -10,6 +9,7 @@ import {
   useVelocity,
   useAnimationControls,
 } from "motion/react";
+import { cn } from "../../lib/utils";
 
 export const DraggableCardBody = ({
   className,
@@ -146,7 +146,7 @@ export const DraggableCardBody = ({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={cn(
-        "relative min-h-96 w-80 overflow-hidden rounded-md bg-neutral-100 p-6 shadow-2xl transform-3d bg-neutral-200 ",
+        "relative min-h-96 w-80 overflow-hidden rounded-md bg-neutral-100 p-3 shadow-2xl transform-3d",
         className
       )}>
       {children}
