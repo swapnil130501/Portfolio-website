@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import SectionHeading from "./SectionHeading";
 
-export default function Blogs({ data }) {
+export default function Blog({ data }) {
     return (
         <div>
              <SectionHeading delay={0.2}>Featured blogs</SectionHeading>
