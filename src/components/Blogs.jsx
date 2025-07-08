@@ -3,7 +3,7 @@ import SectionHeading from "./SectionHeading";
 
 export default function Blog({ data }) {
     return (
-        <div>
+         <div className="py-10">
              <SectionHeading delay={0.2}>Featured blogs</SectionHeading>
              <div>
                 {data?.map((blog, idx) => (
