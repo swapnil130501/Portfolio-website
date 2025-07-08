@@ -1,8 +1,9 @@
 import { motion } from 'motion/react';
+import { cn } from '../lib/utils';
 
 export default function SectionHeading({ children, delay = 0, className = "" }) {
     return (
-        <h2 className="text-neutral-500 font-normal text-sm md:text-sm pt-4 max-w-lg">
+        <h2 className="text-neutral-500 font-normal text-sm md:text-sm pt-4 max-w-lg dark:text-neutral-400">
             {children.split(" ").map((word, idx) => (
                 <motion.span
                     key={word + idx}
@@ -24,7 +25,7 @@ export default function SectionHeading({ children, delay = 0, className = "" }) 
                         ease: "easeInOut",
                         delay: delay + idx * 0.05
                     }}
-                    className='inline-block'
+                    className={cn("inline-block", className)}
                 >
                     {word}&nbsp;
                 </motion.span>

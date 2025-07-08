@@ -9,7 +9,7 @@ export default function SubHeading({ children, className = "" }) {
             viewport={{ once: true}}
             className={className}
             >
-            <h2 className="text-neutral-500 text-sm md:text-base pt-4 max-w-lg">
+            <h2 className="text-neutral-500 text-sm md:text-base pt-4 max-w-lg dark:text-neutral-400">
                 {children}
             </h2>
         </motion.div>

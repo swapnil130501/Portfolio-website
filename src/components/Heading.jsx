@@ -9,7 +9,7 @@ export default function Heading({ children, className = "" }) {
             viewport={{ once: true }}
             className={className}
             >
-            <h1 className="text-2xl md:text-4xl font-bold tracking-tighter drop-shadow-lg text-neutral-800">{children}</h1>
+            <h1 className="text-2xl md:text-4xl font-bold tracking-tighter drop-shadow-lg text-neutral-800 dark:text-neutral-100">{children}</h1>
         </motion.div>
     );
 }

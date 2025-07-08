@@ -2,10 +2,14 @@ import { Link } from "react-router-dom"
 import { motion, useMotionValueEvent, useScroll } from 'motion/react'
 import { useState } from "react";
 import Container from "./Container";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
 
     const navItems = [
+        {
+            title: <ThemeToggle />
+        },
         {
             title: 'About',
             href: '/about'
@@ -47,7 +51,7 @@ export default function Navbar() {
                     y: scrolled ? 10 : 0,
                 }}
                 transition={{ duration: 0.3, ease: "linear" }}
-                className="fixed top-0 left-0 right-0 z-50 mx-auto max-w-4xl flex items-center justify-between bg-white rounded-full py-2 px-4"
+                className="fixed top-0 left-0 right-0 z-50 mx-auto max-w-4xl flex items-center justify-between bg-white dark:bg-neutral-800 rounded-full py-2 px-4"
                 >
                 <Link
                     to={"/#"}
@@ -69,7 +73,7 @@ export default function Navbar() {
                             {hovered === idx && (
                                 <motion.span layoutId="hovered-span" className="absolute inset-0 h-full w-full bg-neutral-100 rounded-full" />
                             )}
-                            <span className="relative z-10">{item.title}</span>
+                            <span className="relative z-10 text-neutral-800 dark:text-neutral-100">{item.title}</span>
                         </Link>
                     ))}
                 </div>
