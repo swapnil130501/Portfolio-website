@@ -58,7 +58,7 @@ export default function Navbar() {
                 >
                     <img 
                         className="h-10 w-10 rounded-full cursor-pointer" 
-                        src="src/assets/avatar.jpg">
+                        src="public/assets/avatar.jpg">
                     </img>
                 </Link>
                 <div className="flex items-center">
