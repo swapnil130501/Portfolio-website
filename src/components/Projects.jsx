@@ -21,7 +21,7 @@ export default function Projects({data, layout = "md:grid-cols-3"}) {
                             <h2 className='font-medium tracking-tight text-neutral-500 pt-8 md:pt-4 dark:dark:text-neutral-100'>
                                 {data.title}
                             </h2>
-                            <p className='text-sm mt-2 text-neutral-500 max-w-sm dark:text-neutral-400'>{data.description}</p>
+                            <p className='text-sm mt-2 text-neutral-500 max-w-sm dark:text-neutral-300'>{data.description}</p>
                         </Link>
                     </motion.div>
                 ))}

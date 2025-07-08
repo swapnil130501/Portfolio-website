@@ -5,7 +5,7 @@ import { Toaster } from "sonner";
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-neutral-100 min-h-screen">
+    <div className="bg-neutral-100 dark:bg-neutral-900 min-h-screen">
       <Navbar />
       <Container>{children}</Container>
       <Toaster position="top-center" richColors />

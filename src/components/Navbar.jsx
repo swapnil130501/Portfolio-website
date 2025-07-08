@@ -46,12 +46,12 @@ export default function Navbar() {
                 animate={{
                     width: scrolled ? "65%" : "100%",
                     boxShadow: scrolled
-                    ? "rgba(17, 17, 26, 0.1) 0px 0px 16px"
+                    ? "0px 2px 3px -1px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(25, 28, 33, 0.02), 0px 0px 0px 1px rgba(25, 28, 33, 0.08)"
                     : "none",
                     y: scrolled ? 10 : 0,
                 }}
                 transition={{ duration: 0.3, ease: "linear" }}
-                className="fixed top-0 left-0 right-0 z-50 mx-auto max-w-4xl flex items-center justify-between bg-white dark:bg-neutral-800 rounded-full py-2 px-4"
+                className="fixed top-0 left-0 right-0 z-50 mx-auto max-w-6xl flex items-center justify-between bg-white dark:bg-neutral-600 rounded-full py-2 px-4"
                 >
                 <Link
                     to={"/#"}
@@ -71,7 +71,7 @@ export default function Navbar() {
                             onMouseLeave={() => setHovered(null)}
                         > 
                             {hovered === idx && (
-                                <motion.span layoutId="hovered-span" className="absolute inset-0 h-full w-full bg-neutral-100 rounded-full" />
+                                <motion.span layoutId="hovered-span" className="absolute inset-0 h-full w-full bg-neutral-100 dark:bg-neutral-800 rounded-full" />
                             )}
                             <span className="relative z-10 text-neutral-800 dark:text-neutral-100">{item.title}</span>
                         </Link>

@@ -13,11 +13,11 @@ export default function Blog({ data }) {
                                 <h2 className='font-bold tracking-tight text-neutral-800 text-base pt-4 dark:text-neutral-100'>
                                     {blog.title}
                                 </h2>
-                                <p className="text-xs md:text-sm mt-2 text-neutral-500 dark:text-neutral-400">
+                                <p className="text-xs md:text-sm mt-2 text-neutral-500 dark:text-neutral-300">
                                     {blog.date}
                                 </p>
                             </div>
-                            <p className='text-sm mt-2 text-neutral-500 max-w-sm md:max-w-lg dark:text-neutral-400'>{blog.description}</p>
+                            <p className='text-sm mt-2 text-neutral-500 max-w-sm md:max-w-lg dark:text-neutral-300'>{blog.description}</p>
                         </Link>
                     </div>
                 ))}

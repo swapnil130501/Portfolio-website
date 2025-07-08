@@ -52,7 +52,7 @@ export function DraggableCardDemo() {
     <DraggableCardContainer
       className="relative flex min-h-[40rem] w-full items-center justify-center overflow-clip mt-10">
       <p
-        className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
+        className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800 dark:text-white">
         Watches
       </p>
       {items.map((item, idx) => (
@@ -62,7 +62,7 @@ export function DraggableCardDemo() {
             alt={item.title}
             className="pointer-events-none relative z-10 h-50 w-80 object-cover" />
           <h3
-            className="mt-4 text-center text-base font-bold text-neutral-800">
+            className="mt-4 text-center text-base font-bold text-neutral-800 dark:text-neutral-300">
             {item.title}
           </h3>
         </DraggableCardBody>
