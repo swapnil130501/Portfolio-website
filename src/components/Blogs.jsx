@@ -3,9 +3,9 @@ import SectionHeading from "./SectionHeading";
 
 export default function Blog({ data }) {
     return (
-         <div className="py-10">
+         <div className="py-4">
              <SectionHeading delay={0.2}>Featured blogs</SectionHeading>
-             <div>
+             <div className="border border-neutral-200 dark:border-neutral-700 p-4 mt-4 rounded-xl shadow-sm dark:shadow-md bg-white dark:bg-neutral-800">
                 {data?.map((blog, idx) => (
                     <div key={idx}>
                         <Link to={"/#"}>
