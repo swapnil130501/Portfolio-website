@@ -8,43 +8,43 @@ export function DraggableCardDemo() {
     {
       title: "Speedmaster",
       image:
-        "public/assets/omega-speedmaster.webp",
+        "/assets/omega-speedmaster.webp",
       className: "absolute top-40 left-[25%] rotate-[-7deg]",
     },
     {
       title: "Khaki Field Mechanical",
       image:
-        "public/assets/hamilton-field.webp",
+        "/assets/hamilton-field.webp",
       className: "absolute top-5 left-[40%] rotate-[8deg]",
     },
     {
       title: "Alpanist",
       image:
-        "public/assets/seiko-alpanist.webp",
+        "/assets/seiko-alpanist.webp",
       className: "absolute top-32 left-[55%] rotate-[10deg]",
     },
     {
       title: "Khaki Field Murph",
       image:
-        "public/assets/hamilton-murph.webp",
+        "/assets/hamilton-murph.webp",
       className: "absolute top-20 right-[35%] rotate-[2deg]",
     },
     {
       title: "Seamaster Aqua Terra",
       image:
-        "public/assets/omega-seamaster.webp",
+        "/assets/omega-seamaster.webp",
       className: "absolute top-24 left-[45%] rotate-[-7deg]",
     },
     {
       title: "Bambino",
       image:
-        "public/assets/orient-bambino.webp",
+        "/assets/orient-bambino.webp",
       className: "absolute top-8 left-[30%] rotate-[4deg]",
     },
     {
       title: "PRX Powermatic 80",
       image:
-        "public/assets/tissot-prx80.webp",
+        "/assets/tissot-prx80.webp",
       className: "absolute top-10 left-[20%] rotate-[-5deg]",
     },
   ];
