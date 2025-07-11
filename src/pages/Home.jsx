@@ -7,6 +7,7 @@ import Blogs from "../components/Blogs";
 import { blogs } from "../data/blogData";
 import FeaturedJob from "../components/FeaturedJob";
 import { IconDownload } from "@tabler/icons-react";
+import GetInTouch from "../components/GetInTouch";
 
 export default function Home() {
     return (
@@ -21,6 +22,7 @@ export default function Home() {
             <Projects data={projects?.slice(1, 4)} layout="md:grid-cols-3" />
             <Blogs data={blogs?.slice(0, 2)} />
             <FeaturedJob />
+            <GetInTouch />
         </Container>
     );
 }
