@@ -19,19 +19,19 @@ export default function BlogDetail() {
       console.log(blog)
   }, [slug]);
 
-  if (!blog) return <div>Blog not found</div>;
+  if (!blog) return <Container className="p-4 md:p-10 bg-white rounded-lg">Coming soon</Container>;
 
   return (
-    <Container className="bg-white dark:bg-neutral-900 p-6 md:p-12 rounded-lg shadow-md">
+    <Container className="bg-white dark:bg-neutral-900 p-4 md:p-10 rounded-lg shadow-md">
       <h1 className="text-3xl font-bold mb-4 text-neutral-800 dark:text-neutral-100">
         {blog.title}
       </h1>
       <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-6">
         {blog.date}
       </p>
-      <article className="prose dark:prose-invert max-w-3xl">
+      <div className="prose dark:prose-invert max-w-none">
         <ReactMarkdown>{markdown}</ReactMarkdown>
-      </article>
+      </div>
     </Container>
   );
 }

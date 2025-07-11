@@ -9,7 +9,7 @@ export default function BlogPage() {
         <>
             <Container className="min-h-screen p-4 md:p-10 bg-white rounded-lg">
                 <Heading>Blogs</Heading>
-                <SubHeading></SubHeading>
+                <SubHeading>Stay updated with technical deep-dives, tutorials, and personal insights</SubHeading>
                 <Blog data={blogs} />
             </Container>
         </>
