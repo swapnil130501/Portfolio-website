@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import SectionHeading from './SectionHeading';
+import FloatingDock from './FloatingDock';
 
 export default function Projects({data, layout = "md:grid-cols-3"}) {
     return (
@@ -23,6 +24,7 @@ export default function Projects({data, layout = "md:grid-cols-3"}) {
                             </h2>
                             <p className='text-sm mt-2 text-neutral-500 max-w-sm dark:text-neutral-300'>{data.description}</p>
                         </Link>
+                        {data.stack && <FloatingDock stack={data.stack} />}
                     </motion.div>
                 ))}
             </div>
