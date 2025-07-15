@@ -22,7 +22,8 @@ export const projects = [
       { name: "React", icon: IconBrandReact },
       { name: "Tailwind", icon: IconBrandTailwind },
       { name: "Docker", icon: IconBrandDocker },
-    ]
+    ],
+    href: "https://github.com/swapnil130501/Project-IDX-Clone"
   },
   {
     title: "Video Call/Chat Application",
@@ -33,7 +34,8 @@ export const projects = [
       { name: "React", icon: IconBrandReact },
       { name: "Socket.IO", icon: IconBrandSocketIo },
       { name: "Node.js", icon: IconBrandNodejs },
-    ]
+    ],
+    href: "https://github.com/swapnil130501/Video-calling-app-frontend"
   },
   {
     title: "Airline Booking System",
@@ -44,7 +46,8 @@ export const projects = [
       { name: "Express", icon: IconBrandVue }, // No Tabler icon for Express, this is a placeholder
       { name: "Node.js", icon: IconBrandNodejs },
       { name: "MySQL", icon: IconBrandMysql },
-    ]
+    ],
+    href: "https://github.com/swapnil130501/BookingService"
   },
   {
     title: "Spotify UI",
@@ -55,7 +58,8 @@ export const projects = [
       { name: "JavaScript", icon: IconBrandJavascript },
       { name: "React", icon: IconBrandReact },
       { name: "Tailwind", icon: IconBrandTailwind },
-    ]
+    ],
+    href: "https://github.com/swapnil130501/spotify-ui"
   },
   {
     title: "X (Twitter) Backend Clone",
@@ -66,7 +70,8 @@ export const projects = [
       { name: "Node.js", icon: IconBrandNodejs },
       { name: "MongoDB", icon: IconBrandMongodb },
       { name: "Express", icon: IconBrandVue },
-    ]
+    ],
+    href: "https://github.com/swapnil130501/Twitter"
   },
   {
     title: "Netflix UI Clone",
@@ -77,6 +82,7 @@ export const projects = [
       { name: "Next.js", icon: IconBrandNextjs },
       { name: "Tailwind", icon: IconBrandTailwind },
       { name: "TypeScript", icon: IconBrandTypescript },
-    ]
+    ],
+    href: "https://github.com/swapnil130501/netflix-ui"
   },
 ];

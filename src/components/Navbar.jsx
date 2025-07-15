@@ -40,7 +40,7 @@ export default function Navbar() {
     })
 
     return (
-        <Container className="bg-white p-8 md:p-8">
+        <Container className="relative bg-white p-8 md:p-8">
             <motion.nav
                 animate={{
                     width: scrolled ? "65%" : "100%",
