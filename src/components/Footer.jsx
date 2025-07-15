@@ -7,7 +7,7 @@ export default function Footer() {
         <Container className="flex justify-between border-neutral-100 p-3 bg-white">
             <p className="text-neutral-500 text-sm p-1 dark:text-neutral-300">Built with love by Swapnil Lohani</p>
             <div className="flex items-center justify-center gap-4">
-                <Link to={"www.linkedin.com/in/swapnil130501"}><IconBrandLinkedin className="size-4 text-neutral-500 hover:text-neutral-700 dark:text-neutral-300 dark:hover:text-neutral-100"/></Link>
+                <Link to={"https://linkedin.com/in/swapnil130501"}><IconBrandLinkedin className="size-4 text-neutral-500 hover:text-neutral-700 dark:text-neutral-300 dark:hover:text-neutral-100"/></Link>
                 <Link to={"https://github.com/swapnil130501"}><IconBrandGithub className="size-4 text-neutral-500 hover:text-neutral-700 dark:text-neutral-300 dark:hover:text-neutral-100"/></Link>
                 <Link to={"https://leetcode.com/u/swapnil130501/"}><IconBrandLeetcode className="size-4 text-neutral-500 hover:text-neutral-700 dark:text-neutral-300 dark:hover:text-neutral-100"/></Link>
             </div>
