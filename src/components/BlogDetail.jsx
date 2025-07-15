@@ -4,6 +4,7 @@ import Container from "./Container";
 import ReactMarkdown from 'react-markdown';
 import { useEffect, useState } from "react";
 import { generateSlug } from "../lib/generateSlug";
+import Heading from './Heading'
 
 export default function BlogDetail() {
   const { slug } = useParams();
@@ -19,7 +20,7 @@ export default function BlogDetail() {
       console.log(blog)
   }, [slug]);
 
-  if (!blog) return <Container className="p-4 md:p-10 bg-white rounded-lg">Coming soon</Container>;
+  if (!blog) return <Container className="p-4 md:p-10 bg-white rounded-lg"><Heading>Coming soon</Heading></Container>;
 
   return (
     <Container className="bg-white dark:bg-neutral-900 p-4 md:p-10 rounded-lg shadow-md">

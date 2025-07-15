@@ -13,7 +13,12 @@ export default function Home() {
     return (
         <Container className="min-h-screen p-4 md:p-10 bg-white rounded-lg">
             <div className="flex items-center justify-between">
-                <Heading>Swapnil Lohani</Heading>
+                <div className="flex items-center gap-4">
+                    <Heading>Swapnil Lohani</Heading>
+                    <span className="border border-neutral-200 dark:border-neutral-600 rounded-full px-3 py-2 text-sm text-neutral-500 dark:text-neutral-300">
+                        Software Developer
+                    </span>
+                </div>
                 <a href="/Swapnil_Lohani_s_Resume.pdf" download className="flex items-center gap-2 bg-neutral-800 dark:bg-neutral-100 text-white dark:text-neutral-800 text-sm px-4 py-2 rounded-md hover:bg-neutral-900 dark:hover:bg-neutral-200 transition">
                     <IconDownload /> Resume
                 </a>
